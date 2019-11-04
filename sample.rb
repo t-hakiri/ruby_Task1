@@ -24,7 +24,8 @@ class Janken
       
     result = ["グー", "チョキ", "パー"]
     unless player_hand < result.length
-      return puts "1,2,3以外の数値が入力されました。"
+      puts "1,2,3のみで入力してください。"
+      return true
     end
     puts "相手は#{result[enemy_hand]}を出しました" 
     puts "あなたは#{result[player_hand]}を出しました" 
